@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieTicket">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SelectChairActivity"></activity>
+        <activity android:name=".onboarding.OnBoardingOneActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".auth.SignUpPhotoActivity" />
+        <activity android:name=".auth.SignUpActivity" />
+        <activity android:name=".auth.SignInActivity" />
+        <activity android:name=".onboarding.OnBoardingThreeActivity" />
+        <activity android:name=".onboarding.OnBoardingTwoActivity" />
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".CheckoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

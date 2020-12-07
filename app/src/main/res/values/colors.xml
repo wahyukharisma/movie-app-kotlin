@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="purple_main">#5F50CF</color>
+    <color name="purple_secondary">#B499FF</color>
+    <color name="gold_button">#FF953F</color>
+    <color name="grey_hint">#B4B4B4</color>
+    <color name="black_text">#303030</color>
+    <color name="green_main">#18A489</color>
 </resources>
