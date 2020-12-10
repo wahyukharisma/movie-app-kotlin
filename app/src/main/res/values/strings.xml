@@ -51,7 +51,7 @@
     <string name="title_booked">Booked</string>
     <string name="title_empty">Tersedia</string>
     <string name="title_selected">Terpilih</string>
-    <string name="button_buy">BELI TIKET</string>
+    <string name="button_buy">BELI TIKET (%d)</string>
 
     // Checkout Activity
     <string name="title_checkout">Checkout</string>
@@ -73,5 +73,10 @@
     <string name="dummy_rate_film">8.0</string>
     <string name="dummy_tag_film">Family, Sci-fi</string>
     <string name="dummy_description">Alita, a battle cyborg, is revived by Ido, a doctor, the great battle</string>
+
+    <string name="title_success">Selamat Menonton!</string>
+    <string name="desc_success">Tiket telah berhasil dibeli, selamat menikmati film kesukaan anda</string>
+    <string name="btn_show_tiket">LIHAT TIKET</string>
+    <string name="btn_home">BERANDA</string>
 
 </resources>

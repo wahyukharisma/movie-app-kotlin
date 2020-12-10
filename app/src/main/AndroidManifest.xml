@@ -3,30 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dayplug.movieticket">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
-
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true"/>
-
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieTicket">
-        <activity android:name=".view.SelectChairActivity"/>
-        <activity android:name="com.dayplug.movieticket.view.onboarding.OnBoardingOneActivity" />
+        <activity android:name=".view.PaymentSuccessActivity"></activity>
+        <activity android:name=".view.SelectChairActivity" />
+        <activity android:name=".view.onboarding.OnBoardingOneActivity" />
         <activity android:name=".view.DetailActivity" />
         <activity android:name=".view.HomeActivity" />
-        <activity android:name="com.dayplug.movieticket.view.auth.SignUpPhotoActivity" />
-        <activity android:name="com.dayplug.movieticket.view.auth.SignUpActivity" />
-        <activity android:name="com.dayplug.movieticket.view.auth.SignInActivity" />
-        <activity android:name="com.dayplug.movieticket.view.onboarding.OnBoardingThreeActivity" />
-        <activity android:name="com.dayplug.movieticket.view.onboarding.OnBoardingTwoActivity" />
+        <activity android:name=".view.auth.SignUpPhotoActivity" />
+        <activity android:name=".view.auth.SignUpActivity" />
+        <activity android:name=".view.auth.SignInActivity" />
+        <activity android:name=".view.onboarding.OnBoardingThreeActivity" />
+        <activity android:name=".view.onboarding.OnBoardingTwoActivity" />
         <activity android:name=".view.CheckoutActivity" />
         <activity android:name=".view.SplashScreenActivity">
             <intent-filter>
@@ -35,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -45,5 +38,14 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 </manifest>

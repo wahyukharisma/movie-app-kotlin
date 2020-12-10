@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.CheckoutActivity">
+    tools:context=".view.CheckoutActivity"
+    android:background="@color/white_background">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_back"
@@ -50,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_titleFilm"
         app:layout_constraintBottom_toTopOf="@id/btn_pay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp">
@@ -145,13 +146,14 @@
                 android:textSize="16sp"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rl_items"
+                android:id="@+id/rv_items"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_titleItem"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
             <RelativeLayout
                 android:id="@+id/rl_total"
@@ -159,7 +161,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rl_items"
+                app:layout_constraintTop_toBottomOf="@id/rv_items"
                 android:layout_marginTop="18dp">
                 <TextView
                     android:id="@+id/tv_titleTotal"
@@ -202,7 +204,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_titleWallet"
-                android:layout_marginTop="18dp">
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp">
                 <TextView
                     android:id="@+id/tv_titleBalance"
                     android:layout_width="match_parent"
