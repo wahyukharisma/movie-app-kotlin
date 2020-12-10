@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "410237918755",
+    "project_id": "movieapp-312f3",
+    "storage_bucket": "movieapp-312f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410237918755:android:d09cd653c44037c46e9b96",
+        "android_client_info": {
+          "package_name": "com.dayplug.movieticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410237918755-sm14c5dnvf1p8rfpn23gvc1bg847vufm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz5QQeMo8ng0fxINKPBZga9jcvmYVlcWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410237918755-sm14c5dnvf1p8rfpn23gvc1bg847vufm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

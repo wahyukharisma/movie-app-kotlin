@@ -1,12 +1,12 @@
-package com.dayplug.movieticket.onboarding
+package com.dayplug.movieticket.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dayplug.movieticket.R
 
-class OnBoardingThreeActivity : AppCompatActivity() {
+class SelectChairActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_on_boarding_three)
+        setContentView(R.layout.activity_select_chair)
     }
 }

@@ -15,20 +15,18 @@
     // Sign In
     <string name="sign_in_title">Sign In</string>
     <string name="title_username">Username</string>
-    <string name="input_username">Masukkan Username</string>
-    <string name="input_password">Masukkan Password</string>
+    <string name="input_username">Username</string>
+    <string name="input_password">Password</string>
     <string name="title_password">Password</string>
     <string name="button_masuk">MASUK</string>
     <string name="button_daftar">DAFTAR AKUN BARU</string>
 
     // Sign Up
     <string name="sign_up_title">Sign Up</string>
-    <string name="title_nama">Nama</string>
-    <string name="input_nama">Masukkan Nama</string>
-    <string name="input_email">Masukkan Email</string>
-    <string name="title_email">Alamat Email</string>
+    <string name="input_nama">Nama</string>
+    <string name="input_email">Email</string>
     <string name="title_foto">Foto</string>
-    <string name="title_greeting">Halo,<br />Wahyu Kharisma</string>
+    <string name="title_greeting">Halo,\n%s</string>
     <string name="button_upload">UPLOAD NANTI</string>
     <string name="button_save">SIMPAN &amp; LANJUTKAN</string>
 
@@ -69,5 +67,11 @@
     <string name="dummy_total">Rp. 140.000</string>
     <string name="button_pay">BAYAR SEKARANG</string>
     <string name="button_cancel">BATALKAN</string>
+
+    // Fragment Home
+    <string name="dummy_title_film">Sonic</string>
+    <string name="dummy_rate_film">8.0</string>
+    <string name="dummy_tag_film">Family, Sci-fi</string>
+    <string name="dummy_description">Alita, a battle cyborg, is revived by Ido, a doctor, the great battle</string>
 
 </resources>

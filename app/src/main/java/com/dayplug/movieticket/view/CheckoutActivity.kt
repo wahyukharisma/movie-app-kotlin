@@ -1,12 +1,12 @@
-package com.dayplug.movieticket.auth
+package com.dayplug.movieticket.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dayplug.movieticket.R
 
-class SignUpActivity : AppCompatActivity() {
+class CheckoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_checkout)
     }
 }
