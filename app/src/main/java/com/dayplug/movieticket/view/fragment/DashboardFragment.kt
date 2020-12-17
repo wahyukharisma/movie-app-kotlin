@@ -1,6 +1,7 @@
 package com.dayplug.movieticket.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dayplug.movieticket.databinding.FragmentDashboardBinding
 import com.dayplug.movieticket.utils.Currency
+import com.dayplug.movieticket.utils.DateTime
 import com.dayplug.movieticket.utils.Preferences
 import com.dayplug.movieticket.view.adapter.ComingSoonAdapter
 import com.dayplug.movieticket.view.adapter.NowPlayingAdapter
@@ -58,8 +60,7 @@ class DashboardFragment : Fragment() {
             rvNowPlaying.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             rvComingSoon.layoutManager = LinearLayoutManager(context)
 
-            _viewModel.getNowPlaying()
-            _viewModel.getComingSoon()
+            _viewModel.getFilm()
 
             _viewModel.nowPlaying.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
                 rvNowPlaying.adapter = NowPlayingAdapter(context!!,it)

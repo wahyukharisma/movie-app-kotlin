@@ -16,12 +16,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
         this.comingSoon = _repository.comingSoon
     }
 
-    fun getNowPlaying(){
-        _repository.getNowPlaying()
-
-    }
-
-    fun getComingSoon(){
-        _repository.getComingSoon()
+    fun getFilm(){
+        _repository.getFilm()
     }
 }

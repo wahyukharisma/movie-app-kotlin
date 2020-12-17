@@ -4,14 +4,12 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Film (
+data class Order (
+    val cinema: String? = "",
+    val nama: String? = "",
+    val waktu: String? = "",
     var desc: String ? = "",
-    var director: String ? = "",
     var genre: String ? = "",
-    var judul: String ? = "",
     var poster: String ? = "",
-    var teaser: String ? = "",
-    var url: String ? = "",
-    var rating: String ? = "",
-    var status: String ? = "",
-) : Parcelable
+    var rating: String ? = ""
+): Parcelable

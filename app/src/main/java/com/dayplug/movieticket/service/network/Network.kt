@@ -10,5 +10,6 @@ private val mDatabase = FirebaseDatabase.getInstance()
 object Firebase{
     val userDatabase : DatabaseReference = mDatabase.getReference("User")
     val filmDatabase : DatabaseReference = mDatabase.getReference("Film")
+    val orderDatabase : DatabaseReference = mDatabase.getReference("Order")
     val mStorage : StorageReference = FirebaseStorage.getInstance().getReference("Image")
 }

@@ -38,12 +38,13 @@
 
     // Detail Screen
     <string name="title_film_dummy">Avengers: End Game</string>
+    <string name="title_film_dummy_2">Spider-Man: Into the Spider-Verse</string>
     <string name="tag_film_dummy">Action, Sci-fi</string>
     <string name="rating_film_dummy">8,0</string>
-    <string name="title_storyboard">Sinopsis</string>
+    <string name="title_storyboard">Storyboard</string>
     <string name="storyboard_dummy">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</string>
-    <string name="title_who_played">Who\'s Played</string>
-    <string name="button_chair">PILIH KURSI</string>
+    <string name="title_who_played">Cast</string>
+    <string name="button_chair">BOOK NOW</string>
 
     // Select Chair
     <string name="title_select_chair">Pilih Kursi</string>
@@ -74,9 +75,29 @@
     <string name="dummy_tag_film">Family, Sci-fi</string>
     <string name="dummy_description">Alita, a battle cyborg, is revived by Ido, a doctor, the great battle</string>
 
+    // Success Transaction
     <string name="title_success">Selamat Menonton!</string>
     <string name="desc_success">Tiket telah berhasil dibeli, selamat menikmati film kesukaan anda</string>
     <string name="btn_show_tiket">LIHAT TIKET</string>
     <string name="btn_home">BERANDA</string>
+
+
+    // Fragment Ticket
+    <string name="ticket_title">Today</string>
+    <string name="dummy_movie">3 Movies</string>
+    <string name="count_movies">%d Movies</string>
+
+    // Ticket Print
+    <string name="qr_title">Quick Print</string>
+    <string name="qr_subtitle">Scan QR</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // Setting
+    <string name="setting_title">Setting</string>
+    <string name="setting_sub_title">Keep it up to date</string>
+    <string name="setting_wallet">Dompet Saya</string>
+    <string name="setting_profile">Ubah Profil</string>
+    <string name="setting_language">Ganti Bahasa</string>
+    <string name="setting_help">Bantuan</string>
 
 </resources>

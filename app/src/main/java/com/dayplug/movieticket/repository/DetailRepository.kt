@@ -22,7 +22,7 @@ class DetailRepository(val application: Application) {
                         data.clear()
 
                         for(temp in snapshot.children){
-                            var plays = temp.getValue(Plays::class.java)
+                            val plays = temp.getValue(Plays::class.java)
                             data.add(plays!!)
                         }
 

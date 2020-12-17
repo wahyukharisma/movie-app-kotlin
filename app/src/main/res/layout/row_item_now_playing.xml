@@ -1,67 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="137dp"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="173dp"
+    android:layout_height="236dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_image"
-        android:layout_width="0dp"
-        android:layout_height="170dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:cardCornerRadius="15dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp">
-        <ImageView
-            android:id="@+id/iv_poster"
-            android:layout_width="137dp"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"/>
-    </androidx.cardview.widget.CardView>
-
-    <RelativeLayout
-        android:id="@+id/rl_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_image"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp">
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dummy_title_film"
-            android:fontFamily="@font/nunito_sans_semi_bold"
-            android:textColor="@color/black_text"
-            android:layout_toStartOf="@id/tv_rate"
-            android:textSize="14sp"
-            android:maxLines="1"
-            android:layout_marginEnd="4dp"
-            android:layout_alignParentStart="true"/>
-        <TextView
-            android:id="@+id/tv_tag"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/dummy_tag_film"
-            android:fontFamily="@font/nunito_sans_regular"
-            android:textColor="@color/grey_hint"
-            android:layout_below="@id/tv_title"
-            android:textSize="12sp"
-            android:maxLines="1"/>
-        <TextView
-            android:id="@+id/tv_rate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dummy_rate_film"
-            android:fontFamily="@font/nunito_sans_regular"
-            android:textColor="@color/black_text"
-            android:layout_alignParentEnd="true"
-            android:textSize="12sp"
-            app:drawableStartCompat="@drawable/ic_star" />
-    </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/gradient_movie_card"
+                android:layout_alignParentBottom="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_title_film"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView
+                    android:id="@+id/tv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_tag_film"
+                    android:fontFamily="@font/nunito_sans_regular"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_black_rating"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                tools:ignore="RelativeOverlap">
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_rate_film"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/ic_star"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:drawablePadding="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

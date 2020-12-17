@@ -1,6 +1,8 @@
 package com.dayplug.movieticket.view
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -35,10 +37,16 @@ class DetailActivity : AppCompatActivity() {
 
             Glide.with(this@DetailActivity)
                     .load(data.poster)
+                    .into(ivPoster)
+
+            Glide.with(this@DetailActivity)
+                    .load(data.teaser)
                     .into(ivHeader)
 
 
             ivBack.setOnClickListener { finish() }
+
+            ivHeader.setOnClickListener { watchYoutube(data.url!!) }
 
             btnSelectChair.setOnClickListener {
                 startActivity(Intent(this@DetailActivity, SelectChairActivity::class.java)
@@ -53,5 +61,12 @@ class DetailActivity : AppCompatActivity() {
                 rvWhoPlayed.adapter = PlaysAdapter(this@DetailActivity, it)
             })
         }
+    }
+
+    private fun watchYoutube(url: String){
+        val apiIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        try{
+            startActivity(apiIntent)
+        }catch (ex: ActivityNotFoundException){}
     }
 }

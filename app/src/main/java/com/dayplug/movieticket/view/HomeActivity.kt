@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import com.dayplug.movieticket.R
 import com.dayplug.movieticket.databinding.ActivityHomeBinding
 import com.dayplug.movieticket.view.fragment.DashboardFragment
+import com.dayplug.movieticket.view.fragment.SettingFragment
 import com.dayplug.movieticket.view.fragment.TicketFragment
 import com.dayplug.movieticket.view.fragment.UserFragment
 
@@ -15,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
 
     private val fragmentHome = DashboardFragment()
     private val fragmentTicket = TicketFragment()
-    private val fragmentUser = UserFragment()
+    private val fragmentUser = SettingFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
