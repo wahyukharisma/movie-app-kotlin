@@ -18,7 +18,6 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
 
     fun getNowPlaying(){
         _repository.getNowPlaying()
-
     }
 
     fun getComingSoon(){

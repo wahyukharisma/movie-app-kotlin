@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dayplug.movieticket.databinding.FragmentDashboardBinding
@@ -14,6 +16,7 @@ import com.dayplug.movieticket.utils.Currency
 import com.dayplug.movieticket.utils.Preferences
 import com.dayplug.movieticket.view.adapter.ComingSoonAdapter
 import com.dayplug.movieticket.view.adapter.NowPlayingAdapter
+import com.dayplug.movieticket.view.adapter.SpacesItemDecoration
 import com.dayplug.movieticket.viewmodel.DashboardViewModel
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import java.util.*
@@ -56,16 +59,19 @@ class DashboardFragment : Fragment() {
             }
 
             rvNowPlaying.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            rvComingSoon.layoutManager = LinearLayoutManager(context)
+
+
+            rvComingSoon.layoutManager = GridLayoutManager(context,3)
+            rvComingSoon.addItemDecoration(SpacesItemDecoration(24))
 
             _viewModel.getNowPlaying()
             _viewModel.getComingSoon()
 
-            _viewModel.nowPlaying.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            _viewModel.nowPlaying.observe(viewLifecycleOwner,  {
                 rvNowPlaying.adapter = NowPlayingAdapter(context!!,it)
             })
 
-            _viewModel.comingSoon.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
+            _viewModel.comingSoon.observe(viewLifecycleOwner, {
                 rvComingSoon.adapter = ComingSoonAdapter(context!!, it)
             })
 
